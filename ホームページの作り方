@@ -1,0 +1,38 @@
+GitHubにホームページを作成する方法について、以下の手順で説明します。この方法では「GitHub Pages」という機能を使用します。GitHub Pagesは、リポジトリ内のHTML、CSS、JavaScriptファイルを元にWebページを公開できるサービスです。
+
+1. GitHubアカウントの作成
+まだアカウントをお持ちでない場合は、GitHubの公式サイトにアクセスし、アカウントを作成してください。
+2. 新しいリポジトリの作成
+GitHubにログインした後、右上の「+」ボタンをクリックし、「New repository（新しいリポジトリ）」を選択します。
+リポジトリ名には、「username.github.io」と設定します。usernameはあなたのGitHubのユーザー名に置き換えてください。
+「Public」を選択し、「Initialize this repository with a README」にチェックを入れて、「Create repository」をクリックします。
+3. ホームページ用のファイルを作成
+作成したリポジトリに移動し、「Add file」ボタンをクリックして、「Create new file」を選択します。
+
+ファイル名に「index.html」と入力し、HTMLの内容を追加します。たとえば、以下のような簡単なHTMLを入力します。
+
+html
+コードをコピーする
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+</head>
+<body>
+    <h1>Welcome to My Homepage</h1>
+    <p>This is my first GitHub Pages site!</p>
+</body>
+</html>
+「Commit new file」をクリックして、変更を保存します。
+
+4. GitHub Pagesの設定
+リポジトリの「Settings（設定）」タブをクリックします。
+左側のメニューから「Pages」を選択します。
+「Source」セクションで「Branch」を選択し、「main」を選びます。続いて「Save」をクリックします。
+5. ホームページの確認
+数分後、https://username.github.io/にアクセスすると、作成したホームページが表示されるはずです。
+6. 継続的な更新
+リポジトリに新しいHTMLファイルを追加したり、既存のファイルを編集することで、ページを更新できます。GitHubが自動的に変更を反映します。
+これで、GitHubを利用して簡単に自分のホームページを作成できます。もしデザインや機能を追加したい場合は、CSSやJavaScriptを使ってリポジトリ内のファイルを拡張できます。
