@@ -9,7 +9,26 @@
 <body>
     <header>
         <h1>ようこそ、私のホームページへ！</h1>
+        <div class="dynamic-images">
+            <img src="a1.jpg" alt="画像1" class="dynamic-image" style="display: none;">
+            <img src="a2.jpg" alt="画像2" class="dynamic-image" style="display: none;">
+        </div>
     </header>
+    <script>
+        const images = document.querySelectorAll('.dynamic-image');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+        }
+
+        // 最初の画像を表示
+        images[currentIndex].style.display = 'block';
+        // 3秒ごとに画像を切り替え
+        setInterval(showNextImage, 2000);
+    </script>
     <nav>
         <ul>
             <li><a href="#about">自己紹介</a></li>
