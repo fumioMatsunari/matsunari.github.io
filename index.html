@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シンプルなホームページ</title>
+    <title>CoderDojo Tempaku Official Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>ようこそ、私のホームページへ！</h1>
+        <h1>CoderDojo天白　へようこそ！</h1>
         <div class="dynamic-images">
-            <img src="a1.jpg" alt="画像1" class="dynamic-image" style="display: none;">
-            <img src="a2.jpg" alt="画像2" class="dynamic-image" style="display: none;">
+            <img src="a-1.jpg" alt="画像1" class="dynamic-image" style="display: none; width: 100%; height: auto;">
+            <img src="a-2.jpg" alt="画像2" class="dynamic-image" style="display: none; width: 100%; height: auto;">
+            <img src="a-3.jpg" alt="画像3" class="dynamic-image" style="display: none; width: 100%; height: auto;">
+            <img src="a-4.jpg" alt="画像4" class="dynamic-image" style="display: none; width: 100%; height: auto;">
         </div>
     </header>
     <script>
@@ -27,7 +29,7 @@
         // 最初の画像を表示
         images[currentIndex].style.display = 'block';
         // 3秒ごとに画像を切り替え
-        setInterval(showNextImage, 2000);
+        setInterval(showNextImage, 3000);
     </script>
     <nav>
         <ul>
